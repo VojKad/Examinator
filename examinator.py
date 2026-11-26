@@ -59,6 +59,14 @@ def nacist_otazky(slozka: Path) -> list[dict]:
 
 
 
+def test_start():
+    clear_screen()
+    print("=" * 44)
+    print("  EXAMINATOR")
+    print("=" * 44)
+
+jmeno = input("Jméno: ").strip()
+prijmeni = input("Přijmení: ").strip()
 
     
 ##############################################################
