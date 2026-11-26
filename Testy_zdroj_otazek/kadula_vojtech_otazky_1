@@ -1,0 +1,50 @@
+Autor: Vojtěch Kadula
+
+
+Otázka: xCo dělá funkce hashlib.sha256(b"heslo").hexdigest() v Pythonu?
+1; Vrátí hexadecimální řetězec reprezentující SHA-256 hash zadaných bajtů.
+0; Zašifruje heslo tak, aby ho bylo možné snadno dešifrovat zpět pomocí .unhexdigest().
+0; Uloží heslo přímo do souboru users.txt.
+0; Převede text na velká písmena a odstraní diakritiku.
+
+
+Otázka: xProč se v Pythonu před hashováním řetězce v hashlib obvykle volá .encode("utf-8")?
+1; Protože hashovací funkce v hashlib pracují s bajtovými daty (bytes), nikoliv přímo s textovými řetězci (str).
+0; Aby se z řetězce odstranily všechny znaky kromě anglické abecedy.
+0; Protože bez .encode("utf-8") vrací hashlib vždy pouze náhodná čísla.
+0; Aby se řetězec automaticky zkomprimoval na menší velikost.
+
+
+Otázka: xCo se stane, když do hashlib.sha256(...) pošleš dvakrát po sobě stejné heslo?
+1; Vznikne pokaždé úplně stejný hash (hashování je deterministické).
+0; Vznikne pokaždé jiný hash kvůli vestavěné náhodné soli.
+0; Program vyhodí chybu ValueError kvůli duplicitnímu vstupu.
+0; Druhé volání vrátí prázdný řetězec.
+
+
+Otázka: xJaký je hlavní rozdíl mezi hashováním a klasickým šifrováním?
+1; Hashování je jednosměrné – z hashe nelze běžně získat původní heslo zpět, zatímco šifrování počítá s dešifrováním pomocí klíče.
+0; Šifrování nejde nikdy vrátit zpět, kdežto hashování se dá vždy snadno odhashovat.
+0; Hashování funguje pouze pro čísla a šifrování pouze pro text.
+0; Žádný, jde o přesná synonyma.
+
+
+Otázka: xJaká proměnná v pathlib vrátí složku, ve které se nachází aktuálně spuštěný soubor?
+1; Path(__file__).resolve().parent
+0; Path(__file__).delete().root
+0; Path.current_folder()
+0; os.folder_name()
+
+
+Otázka: xJaký režim otevření souboru v open(..., mode, encoding="utf-8") přepíše celý existující obsah souboru od začátku?
+0; "a"
+0; "r"
+1; "w"
+0; "rb"
+
+
+Otázka: xCo dělá příkaz continue uvnitř cyklu for nebo while?
+1; Přeskočí zbytek aktuálního průchodu cyklem a pokračuje dalším opakováním cyklu.
+0; Okamžitě ukončí celý cyklus i celý program.
+0; Vrátí hodnotu None z funkce.
+0; Znovu spustí cyklus od úplného začátku s vynulovanými proměnnými.

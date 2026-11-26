@@ -1,0 +1,57 @@
+Autor: Vojtěch Kadula
+
+
+Otázka: xCo udělá příkaz break uvnitř smyčky while True:?
+1; Okamžitě vyskočí ze smyčky while a pokračuje kódem za ní.
+0; Pozastaví program na 1 sekundu.
+0; Přeskočí jen aktuální řádek a jede dál ve stejné smyčce.
+0; Smaže všechny proměnné uvnitř smyčky.
+
+
+Otázka: xCo vrátí výraz "ahoj,svet".split(",", 1)?
+1; Seznam ["ahoj", "svet"] rozdělený maximálně podle první čárky.
+0; Řetězec "ahoj svet" bez čárky.
+0; Číslo 1, protože čárka je na prvním indexu.
+0; Slovník {"ahoj": "svet"}.
+
+
+Otázka: xCo se stane, když se pokusíš rozbalit a, b = "pouhy_text".split(",") (kde v řetězci není žádná čárka)?
+1; Vyhodí se výjimka ValueError, protože .split(",") vrátí jen jeden prvek místo dvou.
+0; Do b se automaticky uloží prázdný řetězec "".
+0; Python automaticky doplní čárku doprostřed textu.
+0; Do obou proměnných se uloží None.
+
+
+Otázka: xK čemu slouží podmínka if __name__ == "__main__": na konci skriptu?
+1; Zajistí, že se kód uvnitř spustí jen při přímém spuštění souboru, ne při jeho importu jako modulu.
+0; Nastaví název souboru na "__main__".
+0; Zapne přísnou kontrolu datových typů v Pythonu.
+0; Přeloží skript do spustitelného .exe souboru.
+
+
+Otázka: xCo znamená TypeError: login_user() missing 2 required positional arguments?
+1; Funkce login_user očekává při zavolání 2 poziční argumenty, ale zavolal jsi ji bez nich.
+0; Soubor login_user neexistuje na disku.
+0; Funkce login_user vrátila chybný datový typ.
+0; V souboru users.txt chybí dva sloupce.
+
+
+Otázka: xJaký je rozdíl mezi = a == v Pythonu?
+1; = je přiřazení hodnoty do proměnné, zatímco == porovnává, zda jsou dvě hodnoty stejné.
+0; == je přiřazení hodnoty a = porovnává rovnost.
+0; = slouží jen pro čísla a == jen pro řetězce.
+0; Oba operátory dělají totéž.
+
+
+Otázka: xCo dělá metoda .lower() zavolaná na řetězci "ReGiStRaCe"?
+1; Vrátí nový řetězec převedený na malá písmena: "registrace".
+0; Smaže první a poslední písmeno řetězce.
+0; Převede řetězec na velká písmena: "REGISTRACE".
+0; Zjistí, kolik malých písmen řetězec obsahuje.
+
+
+Otázka: xProč je lepší v open() vždy uvádět encoding="utf-8" při práci s textovými soubory obsahujícími češtinu?
+1; Aby se předešlo problémům s diakritikou a rozdílným výchozím kódováním napříč operačními systémy.
+0; Protože bez encoding="utf-8" nejde otevřít žádný soubor typu .txt.
+0; Aby se soubor automaticky zašifroval.
+0; Protože UTF-8 zrychluje čtení velkých souborů na dvojnásobek.
